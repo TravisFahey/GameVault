@@ -194,6 +194,7 @@ class GameDetailWindow(tk.Toplevel):
 
         
 class EditGameWindow(tk.Toplevel):
+    """Window to edit an existing game."""
     def __init__(self, master, game):
         super().__init__(master)
         self.master = master
