@@ -191,7 +191,10 @@ class GameDetailWindow(tk.Toplevel):
             tk.Label(self, text="No game image available").pack(pady=10)
 
         tk.Button(self, text="Edit Game", command=self.editGame).pack(pady=10)
-
+        
+    def editGame(self):
+        EditGameWindow(self.master, self.game)
+        self.destroy()
         
 class EditGameWindow(tk.Toplevel):
     """Window to edit an existing game."""
